@@ -1,1 +1,10 @@
-<h1>Welcome To So Natural - Home of all things healthy</h1>
+<% @places.each do |place| %>
+<div>
+	<h1><%= place.name %></h1>
+	<h3><%= place.category %></h3>
+	<i><%= place.address %></i><br />
+	<p><%= place.description %></p><br />
+</div>
+<% end %>	
+<hr />
+
